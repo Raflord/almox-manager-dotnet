@@ -67,7 +67,7 @@ namespace AlmoxManagerApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRecord(Guid id)
+        public async Task<IActionResult> DeleteRecord(string id)
         {
             var load = await dbContext.Loads.FindAsync(id);
             if (load == null) return NotFound();
@@ -78,7 +78,7 @@ namespace AlmoxManagerApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(Guid id, UpdateLoadDto updatedLoad)
+        public async Task<IActionResult> Update(string id, UpdateLoadDto updatedLoad)
         {
             var load = await dbContext.Loads.FindAsync(id);
             if (load == null) return NotFound();
