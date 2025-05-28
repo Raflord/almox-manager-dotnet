@@ -18,4 +18,4 @@ COPY --from=build /app/out .
 # Expose port
 EXPOSE ${PORT}
 
-ENTRYPOINT ["dotnet", "AlmoxManager.dll"]
+ENTRYPOINT ["dotnet", "AlmoxManagerApi.dll"]
