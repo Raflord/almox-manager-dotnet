@@ -1,0 +1,6 @@
+@AlmoxManagerApi_HostAddress = http://localhost:5236
+
+GET {{AlmoxManagerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
